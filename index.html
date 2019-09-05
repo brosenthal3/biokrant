@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Biokrant Ben Rosenthal</title>
+        <!-- Compiled and minified CSS + icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Personal stylesheeets-->
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+    </head>
+    <body>
+        <div class="all">
+            <div class="navbar-fixed">
+                <nav class="green darken-4 nav-center">
+                        <div class="nav-wrapper container">
+                            <ul id="nav-mobile" class="center">
+                                <li><a href="#inleiding">Inleiding</a></li>
+                                <li href="#artikelen"><a>Artikelen</a></li>
+                                <li><a>Evaluatie</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="weather">
+                <p><b>Ochtend </b> 19 graden <i class="material-icons">brightness_medium</i></p>
+                <p><b>Middag </b> 24 graden <i class="material-icons">wb_sunny</i></p>
+                <p><b>Avond </b> 14 graden <i class="material-icons">brightness_3</i></p>
+                <p><b>Kans op regen </b> 73% <i class="material-icons">cloud</i></p>
+                <p><b>Windsnelheid </b> 9km/h <i class="material-icons">toys</i></p>
+            </div>
+            
+            <div class="landing">
+                <div class="landing-text">
+                    <div class="container">
+                        <h1>Biokrant</h1>
+                        <p class="flow-text">Een verzameling van artikelen geschreven over de groenstuk in kalfjeslaan, ingeleverd door Ben Rosenthal als SE project voor klas 4 vwo.</p>
+                        <a href="#inleiding" class="waves-effect waves-light white black-text btn">Meer Lezen</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="inleiding">
+                <div class="container center-text">
+                    <div class="inleiding-text">
+                        <h2>Inleiding</h2>
+                        <p class="flow-text">Wat is de biokrant? Waarom is de biokrant gemaakt?</p>
+                        
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit quia, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptatibus velit minima animi iusto pariatur repellendus nulla assumenda, nobis, voluptate reiciendis situmque asperiores?</p>
+                        <div class="image-with-label" label="Onze Tassen Op Kalfjeslaan">
+                            <img src="tassen.jpg">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit quia, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque perspiciatis nam quam. <span class="begrip tooltipped" data-position="top" data-tooltip="Begrip betekenis">Begrip voorbeeld</span> Odio inventore assumenda placeat, tempora laboriosam, fugiat consequatur autem maxime sint quam dolores dolor fuga culpa. Repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="artikelen">
+                <div class="container center-text">
+                    <h2>Artikelen</h2>
+                    <div class="row">
+                        <div class="col s6 m4">
+                            <div class="card">
+                            <div class="card-image">
+                                <img src="voorkant.jpg">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col s6 m4">
+                            <div class="card">
+                            <div class="card-image">
+                                <img src="voorkant.jpg">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col s6 m4">
+                            <div class="card">
+                            <div class="card-image">
+                                <img src="voorkant.jpg">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $('document').ready(function(){
+                $('.tooltipped').tooltip();
+            });
+        </script>
+    </body>
+</html>
