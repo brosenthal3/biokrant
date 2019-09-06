@@ -9,7 +9,6 @@
         <!--Personal stylesheeets-->
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
     </head>
     <body>
         <div class="all">
@@ -63,50 +62,26 @@
                 <div class="container center-text">
                     <h2>Artikelen</h2>
                     <div class="row">
-                        <div class="col s6 m4">
-                            <div class="card">
-                            <div class="card-image">
-                                <img src="voorkant.jpg">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                            </div>
+                        <div 
+                            class="artikel" 
+                            imageSrc="voorkant.jpg"
+                            title="Natuurlijk, mensen."
+                            inhoud="Inhoud van het artikel"
+                            link="artikel1.html">
                         </div>
-                        <div class="col s6 m4">
-                            <div class="card">
-                            <div class="card-image">
-                                <img src="voorkant.jpg">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                            </div>
+
+                        <div 
+                            class="artikel" 
+                            imageSrc="voorkant.jpg"
+                            title="Honden?!"
+                            inhoud="Inhoud van het artikel">
                         </div>
-                        <div class="col s6 m4">
-                            <div class="card">
-                            <div class="card-image">
-                                <img src="voorkant.jpg">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                            </div>
+
+                        <div 
+                            class="artikel" 
+                            imageSrc="voorkant.jpg"
+                            title="Invasie op de bomen!"
+                            inhoud="Inhoud van het artikel">
                         </div>
                     </div>
                 </div>
@@ -125,5 +100,6 @@
                 $('.tooltipped').tooltip();
             });
         </script>
+        <script src="artikel.js"></script>
     </body>
 </html>
