@@ -1,0 +1,190 @@
+* {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body h1, body h2, body h3 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+body p {
+  line-height: 1.75;
+}
+
+body p.flow-text {
+  line-height: auto;
+}
+
+.image-with-label::after {
+  content: attr(label);
+  color: grey;
+  font-weight: lighter;
+}
+
+.begrip {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.nav-center ul {
+  text-align: center;
+}
+
+.nav-center ul li {
+  display: inline;
+  float: none;
+}
+
+.nav-center ul li a {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.weather {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.weather p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather b {
+  padding-right: 4px;
+}
+
+.weather i {
+  padding-left: 5px;
+  color: #8e8229;
+}
+
+.landing {
+  height: auto;
+  /*background:url("https://wallpaperplay.com/walls/full/8/9/c/139650.jpg");*/
+  background: url("../images/voorkant.jpg");
+  background-size: cover;
+  -webkit-animation: animatedBackground 700s linear infinite;
+          animation: animatedBackground 700s linear infinite;
+}
+
+.landing-text {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  /*background:rgba(234, 245, 245, 0.5);*/
+  color: white;
+  text-shadow: 1px 1px 12px black;
+  border-radius: 9px;
+}
+
+.landing-text a {
+  border-radius: 9px;
+  text-shadow: none;
+}
+
+.landing-text h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#inleiding {
+  padding-top: 3.5rem;
+}
+
+#inleiding img {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 9px;
+}
+
+#artikelen {
+  padding-top: 3.5rem;
+}
+
+.artikelContainer {
+  margin-bottom: 3rem;
+}
+
+.artikelContainer img {
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.artikelContainer .line {
+  height: 2px;
+  width: 100%;
+  background: #1B5E20;
+}
+
+@media (max-width: 880px) {
+  .landing {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .weather {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .weather p {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  nav.nav-center ul li a {
+    padding: 0 10px;
+  }
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 -300px;
+  }
+  to {
+    background-position: -10000px -300px;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 -300px;
+  }
+  to {
+    background-position: -10000px -300px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

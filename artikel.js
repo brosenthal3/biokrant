@@ -58,7 +58,7 @@ $('document').ready(function(){
                 <div class="col s6 m4">
                     <div class="card">
                     <div class="card-image">
-                        <img src="${imageSrc}">
+                        <img src="images/${imageSrc}">
                         <span class="card-title">${title}</span>
                     </div>
                     <div class="card-content">

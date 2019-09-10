@@ -1,0 +1,166 @@
+*{
+    box-sizing:content-box;
+    scroll-behavior:smooth;
+}
+
+$line-height:1.75;
+$background-color:#fff;
+$main-color:#1B5E20;
+
+@mixin flex($justify){
+    display:flex;
+    justify-content:$justify;
+}
+
+//global styles
+body{
+    margin:0;
+    padding:0;
+    background:$background-color;
+    
+    h1, h2, h3{
+        margin-top:0;
+        padding-top:20px;
+    }
+    p{
+        line-height:$line-height;
+        
+        &.flow-text{
+            line-height:auto;
+        }
+    }
+}
+.image-with-label::after{
+    content:attr(label);
+    color:grey;
+    font-weight: lighter;
+}
+.begrip{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.center-text{
+    text-align:center;
+}
+
+//navbar styles
+.nav-center{
+    ul {
+        text-align: center;
+        li {
+            display: inline;
+            float: none;
+            a {
+                display: inline-block;
+                padding:0 40px;
+            }
+        }
+    }
+}
+
+//weather section
+.weather{
+    align-items:center;
+    @include flex(space-around);
+    p{
+        display:flex;
+        align-items:center;
+    }
+    b{
+        padding-right:4px;
+    }
+    i{
+        padding-left:5px;
+        color:#8e8229;
+    }
+}
+
+//landing section
+.landing{
+    height:auto;
+    /*background:url("https://wallpaperplay.com/walls/full/8/9/c/139650.jpg");*/
+    background:url('../images/voorkant.jpg');
+    background-size:cover;
+    animation: animatedBackground 700s linear infinite;
+}
+.landing-text{
+    width:100%;
+    text-align:center;
+    padding:50px 0;
+    /*background:rgba(234, 245, 245, 0.5);*/
+    color:white;
+    text-shadow:1px 1px 12px black;
+    border-radius:9px;
+    a{
+        border-radius:9px;
+        text-shadow:none;
+    }
+    h1{
+        margin-top:0;
+        padding-top:20px;
+    }
+}
+
+//inleiding section
+#inleiding{
+    padding-top:3.5rem;
+
+    img{
+        width:100%;
+        height:240px;
+        object-fit:cover;
+        object-position:top;
+        border-radius:9px;
+    }
+}
+
+//artikel styles
+#artikelen{
+    padding-top:3.5rem;
+}
+.artikelContainer{
+    margin-bottom:3rem;
+
+    img{
+        width:100%;
+        height:45vh;
+        object-fit:cover;
+    }
+    .line{
+        height:2px;
+        width:100%;
+        background:$main-color;
+    }
+}
+
+//responsive styles
+@media(max-width:880px){
+    .landing{
+        animation:none;
+    }
+}
+@media(max-width:780px){
+    .weather{
+        flex-direction: column;
+    }
+    .weather p{
+        margin:10px auto;
+    }
+    
+}
+@media(max-width:700px){
+    nav.nav-center ul li a {
+        padding:0 10px;
+    }
+}
+
+//animations
+@keyframes animatedBackground {
+    from {
+        background-position:0 -300px;
+    }
+    //use negative width for right to left and positive for left to right
+    to {
+        background-position:-10000px -300px;
+    }
+}
