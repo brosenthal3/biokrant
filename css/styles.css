@@ -145,6 +145,24 @@ body p.flow-text {
   background: #1B5E20;
 }
 
+.card-content {
+  min-height: 120px;
+}
+
+.card-image {
+  min-height: 350px;
+}
+
+.card-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 350px;
+}
+
+.card-title {
+  text-shadow: 2px 2px 18px black;
+}
+
 @media (max-width: 880px) {
   .landing {
     -webkit-animation: none;
@@ -154,13 +172,20 @@ body p.flow-text {
 
 @media (max-width: 780px) {
   .weather {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto 10px;
   }
   .weather p {
     margin: 10px auto;
+    width: 45%;
   }
 }
 

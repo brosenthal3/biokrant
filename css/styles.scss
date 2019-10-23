@@ -1,15 +1,15 @@
-*{
-    box-sizing:content-box;
-    scroll-behavior:smooth;
-}
-
 $line-height:1.75;
 $background-color:#fff;
-$main-color:#1B5E20;
+$accent-color:#1B5E20;
 
 @mixin flex($justify){
     display:flex;
     justify-content:$justify;
+}
+
+*{
+    box-sizing:content-box;
+    scroll-behavior:smooth;
 }
 
 //global styles
@@ -129,8 +129,21 @@ body{
     .line{
         height:2px;
         width:100%;
-        background:$main-color;
+        background:$accent-color;
     }
+}
+.card-content{
+    min-height:120px;
+}
+.card-image{
+    min-height:350px;
+    img{
+        object-fit:cover;
+        min-height:350px;
+    }
+}
+.card-title{
+    text-shadow:2px 2px 18px black;
 }
 
 //responsive styles
@@ -141,10 +154,14 @@ body{
 }
 @media(max-width:780px){
     .weather{
-        flex-direction: column;
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+        margin:auto 10px;
     }
     .weather p{
         margin:10px auto;
+        width:45%;
     }
     
 }

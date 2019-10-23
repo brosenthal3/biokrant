@@ -55,10 +55,10 @@ $('document').ready(function(){
         const link = currentElement.getAttribute('link');
         currentElement.innerHTML = `
             <div>
-                <div class="col s6 m4">
+                <div class="col s12 m6">
                     <div class="card">
                     <div class="card-image">
-                        <img src="images/${imageSrc}">
+                        <img src="${imageSrc}">
                         <span class="card-title">${title}</span>
                     </div>
                     <div class="card-content">
