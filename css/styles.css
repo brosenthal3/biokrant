@@ -124,6 +124,14 @@ body p.flow-text {
   border-radius: 9px;
 }
 
+#raadsel {
+  padding-bottom: 2.4rem;
+}
+
+#raadsel a {
+  background-color: #1B5E20;
+}
+
 #artikelen {
   padding-top: 3.5rem;
 }
@@ -159,8 +167,26 @@ body p.flow-text {
   min-height: 350px;
 }
 
+.w-100 img {
+  height: 330px;
+}
+
 .card-title {
   text-shadow: 2px 2px 18px black;
+}
+
+.kwpzl img {
+  height: 100% !important;
+}
+
+.kwpzl .antw {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 880px) {
