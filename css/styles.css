@@ -161,10 +161,27 @@ body p.flow-text {
   min-height: 350px;
 }
 
+.card-image:hover img {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+
 .card-image img {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 350px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-filter: contrast(80%);
+          filter: contrast(80%);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
 }
 
 .w-100 img {
@@ -172,7 +189,21 @@ body p.flow-text {
 }
 
 .card-title {
-  text-shadow: 2px 2px 18px black;
+  text-shadow: 4px 4px 8px black;
+  text-align: left;
+}
+
+.card-title .title {
+  font-weight: 450;
+}
+
+.card-title .rubriek {
+  color: #e6ee9c;
+  font-weight: inherit;
+}
+
+.bn {
+  padding-bottom: 1rem;
 }
 
 .kwpzl img {

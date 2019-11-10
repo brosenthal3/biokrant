@@ -146,9 +146,21 @@ body{
 }
 .card-image{
     min-height:350px;
+    &:hover{
+        img{
+            filter:blur(0px);
+            filter:contrast(100%);
+        }
+    }
     img{
         object-fit:cover;
         min-height:350px;
+        filter:blur(2px);
+        filter:contrast(80%);
+        transition-duration:300ms;
+        transition-property:filter;
+
+        
     }
 }
 .w-100{
@@ -157,9 +169,19 @@ body{
     }
 }
 .card-title{
-    text-shadow:2px 2px 18px black;
+    text-shadow:4px 4px 8px black;
+    text-align:left;
+    .title{
+        font-weight:450;
+    }
+    .rubriek{
+        color:#e6ee9c;
+        font-weight:inherit;
+    }
 }
-
+.bn{
+    padding-bottom:1rem;
+}
 
 .kwpzl{
     img{

@@ -1,30 +1,3 @@
-const artikelData = [
-    {
-        title: 'title1',
-        inhoud: 'lorem  a, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptatibus velit minima animi iusto pariatur repellendus nulla assumenda, nobis, voluptate reiciendis situmque asperior',
-        imageSrc: 'inhoud.jpg',
-        link: 'artikelen/artikel1.html'
-    },
-    {
-        title: 'title3',
-        inhoud: 'lorem  a, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptatibus velit minima animi iusto pariatur repellendus nulla assumenda, nobis, voluptate reiciendis situmque asperior',
-        imageSrc: 'inhoud.jpg',
-        link: 'artikelen/artikel1.html'
-    },
-    {
-        title: 'title4',
-        inhoud: 'lorem  a, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptatibus velit minima animi iusto pariatur repellendus nulla assumenda, nobis, voluptate reiciendis situmque asperior',
-        imageSrc: 'inhoud.jpg',
-        link: 'artikelen/artikel1.html'
-    },
-    {
-        title: 'title2',
-        inhoud: 'lorem  a, laborum eos quae non iure enim tempora numquam a sapiente aliquid voluptate. Quo, doloremque molestiae aliquid mollitia labore rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptatibus velit minima animi iusto pariatur repellendus nulla assumenda, nobis, voluptate reiciendis situmque asperior',
-        imageSrc: 'inhoud.jpg',
-        link: 'artikelen/artikel1.html'
-    },
-];
-
 $('document').ready(function(){
     /*var elements = artikelData.map((artikel, index) =>{
         return `
@@ -50,6 +23,7 @@ $('document').ready(function(){
     $('.artikel').each(function(element){
         const currentElement = $('.artikel')[element];
         const title = currentElement.getAttribute('title');
+        const rubriek = currentElement.getAttribute('rubriek');
         const imageSrc = currentElement.getAttribute('imageSrc');
         const inhoud = currentElement.getAttribute('inhoud');
         const link = currentElement.getAttribute('link');
@@ -57,10 +31,14 @@ $('document').ready(function(){
             <div>
                 <div class="col s12 m6">
                     <div class="card">
-                    <div class="card-image">
+                    <a href="artikelen/${link}"><div class="card-image">
                         <img src="${imageSrc}">
-                        <span class="card-title">${title}</span>
-                    </div>
+                        <span class="card-title">
+                            <span class="rubriek">${rubriek}</span>
+                            <br>
+                            <span class="title">${title}</span>
+                        </span>
+                    </div></a>
                     <div class="card-content">
                         <p>${inhoud}</p>
                     </div>
